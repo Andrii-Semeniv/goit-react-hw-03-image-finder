@@ -15,7 +15,7 @@ const fetchImg = async (userQuery, page) => {
     return response.data;
   } catch (error) {
     console.error(error);
-    return [];
+    return error.message;
   }
 };
 export default fetchImg;

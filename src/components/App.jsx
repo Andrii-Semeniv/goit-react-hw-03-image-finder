@@ -38,7 +38,7 @@ export class App extends Component {
         isShowButton: Math.ceil(page < newPhotos.totalHits / 12),
       }));
     } catch (error) {
-      alert({ error });
+      alert(error);
     } finally {
       this.setState({ isLoading: false });
     }
